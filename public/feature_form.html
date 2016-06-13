@@ -1,0 +1,222 @@
+<div class="panel panel-default">
+
+
+    <div class="panel panel-heading">Feature</div>
+    <div class="panel panel-body">
+
+        <div class="row">
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-md-2">
+                        <div class="input-group">
+                            <label class="control-label">Release Id</label>
+                            <label class="control-label">/</label>
+                            <label class="control-label">Target Date:</label></div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="input-group">
+                            <select class="form-control input-sm">
+                                <option>R22.4</option>
+                                <option>R22.3P</option>
+                            </select>
+                            <span class="input-group-addon input-sm">/</span>
+                            <input type="text" class="form-control input-sm" id="datepicker-autoClose"
+                                   placeholder="Auto Close Datepicker"/>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="row">
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-md-2">
+                        <div class="input-group">
+                            <label class="control-label">Organization</label>
+                            <label class="control-label">/</label>
+                            <label class="control-label">Domain:</label></div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="input-group">
+                            <select class="form-control input-sm">
+                                <option>OOCL</option>
+                                <option>OLL</option>
+
+                            </select>
+                            <span class="input-group-addon input-sm">/</span>
+                            <select class="form-control input-sm">
+                                <option>SPS</option>
+                                <option>ARP</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+        <div class="row">
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-md-2">
+                        <div class="input-group">
+                            <label class="control-label">Feature Id:</label></div>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" id="masked-input-featureId"
+                               placeholder="999.999.999.999" ng-model="feature.featureId"/>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+        <div class="row">
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-md-2">
+                        <div class="input-group">
+                            <label class="control-label">Application Name</label>
+                            <label class="control-label">-</label>
+                            <label class="control-label">Feature Name:</label></div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="input-group">
+                            <input type="text" class="form-control input-sm">
+                            <span class="input-group-addon input-sm">-</span>
+                            <input type="text" class="form-control input-sm">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="row">
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-md-2">
+                        <div class="input-group">
+                            <label class="control-label">Permission Style:</label>
+
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="input-group">
+                            <label class="checkbox-inline">
+                                <input type="checkbox" value=""/>
+                                View
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" value=""/>
+                                Create
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" value=""/>
+                                Edit
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" value=""/>
+                                Delete
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" value=""/>
+                                Approve
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" value=""/>
+                                Special
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="row">
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-md-2">
+                        <div class="input-group">
+                            <label class="control-label">Cross Carrier:</label>
+
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <input type="checkbox"/>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="row">
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-md-2">
+                        <div class="input-group">
+                            <label class="control-label">Delegatable:</label>
+
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <input type="checkbox"/>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+        <div class="row">
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-md-2">
+                        <div class="input-group">
+                            <label class="control-label">Feature Description:</label>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <textarea class="form-control" placeholder="Textarea" rows="2"></textarea>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="panel panel-heading">
+        <div class="row">
+            <div class="col-md-1">
+                <label class="control-label"> Qualifier</label></div>
+            <div class="col-md-1"><i class="fa fa-plus-square-o fa-2x"></i></div>
+        </div>
+    </div>
+    <div class="panel panel-body">
+
+        <div class="row">
+            <div class="col-md-2">QualifierType/Description:</div>
+            <div class="col-md-6">
+                <div class="input-group">
+                    <input type="text" name="" id="qual-type" class="form-control input-sm" placeholder="Try typing 'a' or 'b'." />
+                    <span class="input-group-addon input-sm">/</span>
+                    <input type="text" class="form-control input-sm">
+                </div>
+            </div>
+            <div class="col-md-1">
+                <i class="fa fa-trash-o fa-2x"></i>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="panel panel-footer">
+        <button class="btn btn-success">Save</button>
+    </div>
+
+</div>
+
+<script>
+    $("#datepicker-autoClose").datepicker({todayHighlight: true, autoclose: true});
+    $("#masked-input-featureId").mask("999.999.999.999");
+    var e = ["ActionScript", "AppleScript", "Asp", "BASIC", "C", "C++", "Clojure", "COBOL", "ColdFusion", "Erlang", "Fortran", "Groovy", "Haskell", "Java", "JavaScript", "Lisp", "Perl", "PHP", "Python", "Ruby", "Scala", "Scheme"];
+    $("#qual-type").autocomplete({source: e})
+</script>
