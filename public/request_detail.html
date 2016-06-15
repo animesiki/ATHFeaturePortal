@@ -1,3 +1,13 @@
+<!-- begin breadcrumb -->
+<ol class="breadcrumb pull-right">
+    <li><a href="javascript:;">Home</a></li>
+    <li class="active">Request Detail</li>
+</ol>
+<!-- end breadcrumb -->
+<!-- begin page-header -->
+<h1 class="page-header">Request Detail <small>header small text goes here...</small></h1>
+
+
 <div class="row">
 <div class="col-md-8">
 <div ng-include="'feature_form.html'"></div>
@@ -10,7 +20,7 @@
                     Review<span class="label label-success pull-right">4 version</span></h4>
             </div>
             <div class="panel-body bg-silver">
-                <div data-scrollbar="true" data-height="600px">
+                <div id="review-content">
                     <ul class="chats">
                         <li class="left"><span class="date-time">yesterday 11:23pm</span> <a href="javascript:;"
                                                                                              class="name">Sowse Bawdy</a> <a href="javascript:;" class="image">
@@ -34,28 +44,7 @@
                                 Euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
                             </div>
                         </li>
-                        <li class="left"><span class="date-time">11:15am</span> <a href="#" class="name">Shag
-                            Strap</a> <a href="javascript:;" class="image">
-                            <img alt="" src="assets/img/user-14.jpg" /></a>
-                            <div class="message">
-                                Nullam iaculis pharetra pharetra. Proin sodales tristique sapien mattis placerat.
-                            </div>
-                        </li>
 
-                        <li class="left"><span class="date-time">11:15am</span> <a href="#" class="name">Shag
-                            Strap</a> <a href="javascript:;" class="image">
-                            <img alt="" src="assets/img/user-14.jpg" /></a>
-                            <div class="message">
-                                Nullam iaculis pharetra pharetra. Proin sodales tristique sapien mattis placerat.
-                            </div>
-                        </li>
-                        <li class="left"><span class="date-time">11:15am</span> <a href="#" class="name">Shag
-                            Strap</a> <a href="javascript:;" class="image">
-                            <img alt="" src="assets/img/user-14.jpg" /></a>
-                            <div class="message">
-                                Nullam iaculis pharetra pharetra. Proin sodales tristique sapien mattis placerat.
-                            </div>
-                        </li>
                     </ul>
                 </div>
             </div>
@@ -74,3 +63,12 @@
         <!-- end panel -->
     </div>
 </div>
+
+
+<script>
+    $(function(){
+        $('#review-content').slimScroll({
+            height: '200px'
+        });
+    });
+</script>
