@@ -30,20 +30,34 @@
                 <h4 class="panel-title">
                     Review</h4>
             </div>
+            <div class="panel panel-body">
+                <div class="row">
+                    <div class="col-md-2 text-danger"><Strong>Status:</Strong></div>
+
+                    <div class="col-md-10">
+                        <div class="input-group ">
+                            <label class="radio-inline text-info"><input type="radio" name="status" ng-checked="true">New</label>
+                            <label class="radio-inline text-warning"><input type="radio" name="status">Progress</label>
+                            <label class="radio-inline text-success"><input type="radio" name="status">Complete</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="panel-body bg-silver">
                 <div id="review-content">
                     <ul class="chats">
-                        <li class="left"><span class="date-time">yesterday 11:23pm</span> <a href="javascript:;"
-                                                                                             class="name">Sowse
-                            Bawdy</a> <a href="javascript:;" class="image">
-                            <img alt="" src="assets/img/user-12.jpg"/></a>
+                        <li class="left">
+                            <span class="date-time ">yesterday 11:23pm</span>
+                            <a href="javascript:;" class="name">Sowse Bawdy</a>
+                            <a href="javascript:;" class="image">
+                                <img alt="" src="assets/img/user-12.jpg"/></a>
                             <div class="message">
                                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit volutpat. Praesent mattis
                                 interdum arcu eu feugiat.
                             </div>
                         </li>
                         <li class="right"><span class="date-time">08:12am</span> <a href="#" class="name"><span
-                                class="label label-primary">ADMIN</span> Me</a> <a href="javascript:;" class="image">
+                                class="label label-primary">BA</span> Me</a> <a href="javascript:;" class="image">
                             <img alt="" src="assets/img/user-13.jpg"/></a>
                             <div class="message">
                                 Nullam posuere, nisl a varius rhoncus, risus tellus hendrerit neque.
@@ -51,9 +65,16 @@
                         </li>
                         <li class="left"><span class="date-time">09:20am</span> <a href="#" class="name">Neck
                             Jolly</a> <a href="javascript:;" class="image">
-                            <img alt="" src="assets/img/user-10.jpg"/></a>
+                            <img alt="" src="assets/img/user-12.jpg"/></a>
                             <div class="message">
                                 Euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                            </div>
+                        </li>
+                        <li class="right"><span class="date-time">08:12am</span> <a href="#" class="name"><span
+                                class="label label-primary">BA</span> Me</a> <a href="javascript:;" class="image">
+                            <img alt="" src="assets/img/user-13.jpg"/></a>
+                            <div class="message">
+                                Nullam posuere, nisl a varius rhoncus, risus tellus hendrerit neque.
                             </div>
                         </li>
 
@@ -61,16 +82,12 @@
                 </div>
             </div>
             <div class="panel-footer">
-                <form name="send_message_form" data-id="message-form">
-                    <div class="input-group">
-                        <input type="text" class="form-control input-sm" name="message"
-                               placeholder="Enter your message here.">
-                                <span class="input-group-btn">
-                                    <button class="btn btn-primary btn-sm" type="button">
-                                        Send</button>
-                                </span>
-                    </div>
-                </form>
+                <textarea class="text-primary form-control no-rounded-corner" rows="4"></textarea>
+                <div class="panel-footer text-right">
+                    <a href="javascript:;" class="btn btn-white btn-sm">Reset</a>
+                    <a href="javascript:;" class="btn btn-primary btn-sm m-l-5">Save</a>
+                </div>
+
             </div>
         </div>
         <!-- end panel -->
@@ -81,7 +98,7 @@
 <script>
     $(function () {
         $('#review-content').slimScroll({
-            height: '200px'
+            height: '400px'
         });
     });
 </script>
