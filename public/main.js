@@ -18,9 +18,14 @@ featurePortal.config(['$stateProvider', '$urlRouterProvider', function ($statePr
             templateUrl: 'request_list.html',
             controller: ''
         })
+        .state('complete_request', {
+            url: "/comp_request",
+            templateUrl: 'complete_request.html',
+            controller: ''
+        })
         .state('request_detail', {
         url: "/request_detail",
         templateUrl: 'request_detail.html',
         controller: ''
-    });;
+    });
 }]);
